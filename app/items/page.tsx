@@ -18,7 +18,7 @@ const ItemsPage = async () => {
       <ul>
         {items.map((item) => (
           <li key={item._id}>
-            <Link href={`/items/${item._id}`}>
+            <Link className="font-medium text-blue-600 dark:text-blue-500 hover:underline" href={`/items/${item._id}`}>
               {item.name} - Quantity: {item.quantity}
             </Link>
           </li>
